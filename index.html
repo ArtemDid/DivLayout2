@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Верстка при помощи DIV</title>
+
+    <style>
+        #main_container {
+            width: 100%;
+        }
+
+        #left_slide {
+            width: 60%;
+            float: left;
+        }
+
+        #right_slide {
+            width: 40%;
+            float: right;
+        }
+
+        #right_slide > div {
+            width: 100%;
+        }
+
+        #calendar {
+            min-height: 300px;
+            min-width: 300px;
+            width: 80%;
+        }
+
+        #calendar td {
+            text-align: center;
+            vertical-align: middle;
+            width: 14%;
+            height: 14%;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid #0d0ace;
+        }
+
+        #calendar tbody {
+            color: rgba(34, 167, 29, 0.795);
+        }
+
+        .day-of-week-even {
+            background-color: #aa9743;
+        }
+
+        .day-of-week-odd {
+            background-color: rgb(241, 225, 154);
+        }
+
+        .holiday {
+            color: rgb(192, 20, 20);
+        }
+
+        #left_slide img {
+            width: 95%;
+        }
+
+        #right_slide img {
+            width: 30%;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div id="main_container">
+        <div id="left_slide">
+            <img src="https://www.mukachevo.net/Content/img/news/174/p_174926_1_slidertop2.jpg" />
+        </div>
+        <div id="right_slide">
+            <DIV>
+                <div style="float: left;"> Липень </div>
+                <div style="float: right;"> July </div>
+            </DIV>
+            <div style="clear: both;" >
+                <table id="calendar">
+                    <thead>
+                        <tr>
+                            <td class="day-of-week-even">Пн</td>
+                            <td class="day-of-week-odd">Вт</td>
+                            <td class="day-of-week-even">Ср</td>
+                            <td class="day-of-week-odd">Чт</td>
+                            <td class="day-of-week-even">Пт</td>
+                            <td class="day-of-week-odd holiday">Сб</td>
+                            <td class="day-of-week-even holiday">Вс</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td class="holiday">6</td>
+                            <td class="holiday">7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td class="holiday">13</td>
+                            <td class="holiday">14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td class="holiday">20</td>
+                            <td class="holiday">21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td class="holiday">27</td>
+                            <td class="holiday">28</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td class="holiday">3</td>
+                            <td class="holiday">4</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="day-of-week-even">Mo</td>
+                            <td class="day-of-week-odd">Tu</td>
+                            <td class="day-of-week-even">We</td>
+                            <td class="day-of-week-odd">Th</td>
+                            <td class="day-of-week-even">Fr</td>
+                            <td class="day-of-week-odd holiday">Sa</td>
+                            <td class="day-of-week-even holiday">Su</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div style="padding: 5px;">
+                <small>Старт каталога</small>
+            </div>
+            <div>
+                <img src="images/opt.png" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
